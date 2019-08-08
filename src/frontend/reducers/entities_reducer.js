@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux'
-import bcReducer from './entities/bc_reducer'
+import addressReducer from './entities/address_reducer'
 import txReducer from './entities/tx_reducer';
+import blockReducer from './entities/block_reducer'
 
 const entitiesReducer = combineReducers({
-    bc: bcReducer,
+    address: addressReducer,
+    block: blockReducer,
     tx: txReducer
 })
 

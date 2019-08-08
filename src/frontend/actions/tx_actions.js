@@ -9,8 +9,9 @@ export const receiveTx = data => {
     }
 }
 
-export const fetchTx = hash = dispatch => {
+export const fetchTx = hash => dispatch => {
     return (
         TxApiUtil.fetchTx(hash).then(data => dispatch(receiveTx(data)))
     )
 }
+

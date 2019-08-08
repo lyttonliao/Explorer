@@ -1,6 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import LandingPageContainer from './frontend/components/landing_page/landing_page_container'
+
 
 // function App() {
 //   return (
@@ -25,7 +28,9 @@ import './App.css';
 
 const App = () => (
   <div>
-    <h1>Blockchain</h1>
+    <Switch>
+      <Route path="/explorer" component={LandingPageContainer}/>
+    </Switch>
   </div>
 )
 
