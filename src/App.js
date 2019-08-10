@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import LandingPageContainer from './frontend/components/landing_page/landing_page_container'
+import BlockContainer from './frontend/components/landing_page/block_container'
 
 
 // function App() {
@@ -29,7 +30,8 @@ import LandingPageContainer from './frontend/components/landing_page/landing_pag
 const App = () => (
   <div>
     <Switch>
-      <Route path="/explorer" component={LandingPageContainer}/>
+      <Route path="/explorer" component={LandingPageContainer} />
+      <Route path="/block/:block_hash" component={BlockContainer} />
     </Switch>
   </div>
 )

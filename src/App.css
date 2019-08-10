@@ -31,3 +31,153 @@
     transform: rotate(360deg);
   }
 }
+
+/* -------------- */
+
+.landing-page {
+  display: flex;
+}
+
+.side-bar {
+  width: 30%
+}
+
+.block-list {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  /* transform: translate(-50%, -50%); */
+
+  width: 45%
+}
+
+.block-columns {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  align-items: flex-start;
+  /* width: 100%; */
+  border-bottom: 1px solid rgb(240, 242, 247);
+  /* margin: 2% 0%; */
+  font-size: 1.75vh
+}
+
+.height {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 15%;
+}
+
+.hash {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+
+.time {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 35%;
+}
+
+a {
+  color: rgb(36, 82, 168);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.block {
+  display: flex;
+  flex-direction: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 0px;
+  /* margin: 2% 0% 2% 0%; */
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid rgb(240, 242, 247);
+}
+
+.block-height {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 15%;
+}
+
+.block-hash {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  /* color: lightskyblue */
+}
+
+.block-date {
+  flex-direction: column;
+  align-items: flex-start;
+  width: 35%;
+}
+
+/* ----------- */
+
+.single-block {
+
+}
+
+.block-info-1 {
+  /* display: flex;
+  flex-direction: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start; */
+  margin-bottom: 0px;
+  /* border-bottom: 1px solid rgb(240, 242, 247); */
+}
+
+.summary {
+  font-weight: bold;
+  /* border-top: 1px solid rgb(240, 242, 247); */
+}
+
+h3 {
+  font-size: 250%;
+}
+
+/* .row:first-child {
+  border-top: 1px solid rgb(240, 242, 247);
+} */
+
+.summary-row {
+  display: flex;
+  width: 40%;
+  border-bottom: 2px solid rgb(43, 40, 40);
+  border-top: 2px solid rgb(43, 40, 40);
+  background-color: lightgray
+  /* margin-left: 2%; */
+}
+
+.summary-row p {
+  margin-left: 2%;
+}
+
+.row {
+  display: flex;
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  width: 40%;
+  border-bottom: 2px solid rgb(43, 40, 40);
+  /* border-top: 1px solid rgb(240, 242, 247); */
+}
+
+.row:nth-child(2n) {
+  background-color: lightgray
+}
+
+.row p {
+  flex-direction: start;
+  align-items: flex-start;
+  width: 50%;
+  font-size: 90%;
+  margin-left: 2%;
+}
