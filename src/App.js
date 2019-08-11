@@ -4,35 +4,20 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import LandingPageContainer from './frontend/components/landing_page/landing_page_container'
 import BlockContainer from './frontend/components/landing_page/block_container'
+import AddressContainer from './frontend/components/address/address_container';
+import Header from './frontend/components/header/header'
 
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 const App = () => (
   <div>
-    <Switch>
-      <Route path="/explorer" component={LandingPageContainer} />
-      <Route path="/block/:block_hash" component={BlockContainer} />
-    </Switch>
+    <Header />
+    <div className="main-content">
+      <Switch>
+        <Route path="/explorer" component={LandingPageContainer} />
+        <Route exact path="/block/:block_hash" component={BlockContainer} />
+        <Route exact path="/address/:address" component={AddressContainer} />
+      </Switch>
+    </div>
   </div>
 )
 

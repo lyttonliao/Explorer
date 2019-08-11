@@ -4,14 +4,17 @@ import { fetchBlock } from '../../actions/block_actions'
 import Block from './block'
 
 
-export const msp = (state, ownProps) => {
+export const msp = (state) => {
+    const current_block = state.current_block
+    debugger
     return {  
         blocks: state.entities.blocks,
-        current_block: state.current_block
+        current_block: current_block,
     }
 }
 
 export const mdp = dispatch => {
+    debugger
     return {
         fetchBlock: block_hash => dispatch(fetchBlock(block_hash))
     }

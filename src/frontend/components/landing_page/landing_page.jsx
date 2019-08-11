@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
+import { timeout } from 'q';
 
 class LandingPage extends React.Component {
     constructor(props) {
@@ -11,15 +12,20 @@ class LandingPage extends React.Component {
         this.props.fetchAllBlocks(date.getTime())
     }
 
+    convertToTime(unix) {
+        const date = new Date(unix * 1000)
+        return date.toLocaleDateString('default', { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric'})
+    }
+
     blockTolist() {
         return Object.values(this.props.blocks).map((block, i) => {
-            const date = new Date(block.time * 1000).toUTCString()
             const short_block_hash = block.hash.substring(0,23) + "..."
+            const time = this.convertToTime(block.time)
             return (
                 <div key={i} className="block">
                     <div className="block-height"><Link to={`/block/${block.hash}`}>{block.height}</Link></div>
                     <div className="block-hash"><Link to={`/block/${block.hash}`}>{short_block_hash}</Link></div>
-                    <div className="block-date">{date}</div>
+                    <div className="block-date">{time}</div>
                 </div>
             )
         })
@@ -48,4 +54,4 @@ class LandingPage extends React.Component {
     }
 }
 
-export default LandingPage
+export default withRouter(LandingPage)
