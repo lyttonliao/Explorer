@@ -6,7 +6,6 @@ import Block from './block'
 
 export const msp = (state) => {
     const current_block = state.current_block
-    debugger
     return {  
         blocks: state.entities.blocks,
         current_block: current_block,
@@ -14,7 +13,6 @@ export const msp = (state) => {
 }
 
 export const mdp = dispatch => {
-    debugger
     return {
         fetchBlock: block_hash => dispatch(fetchBlock(block_hash))
     }

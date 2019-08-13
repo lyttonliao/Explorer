@@ -1,5 +1,5 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class Address extends React.Component {
     constructor(props) {
@@ -7,6 +7,7 @@ class Address extends React.Component {
     }
 
     componentDidMount() {
+        debugger
         this.props.fetchAddress(this.props.match.params.address)
     }
 
@@ -19,4 +20,4 @@ class Address extends React.Component {
     }
 }
 
-export default withRouter(Address)
+export default Address

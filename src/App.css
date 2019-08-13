@@ -178,8 +178,8 @@ h3 {
 .block-summary-row {
   display: flex;
   width: 100%;
-  border-bottom: 2px solid rgb(43, 40, 40);
-  border-top: 2px solid rgb(43, 40, 40);
+  border-bottom: 1px solid rgb(43, 40, 40);
+  border-top: 1px solid rgb(43, 40, 40);
 }
 
 .block-summary-row p {
@@ -189,11 +189,11 @@ h3 {
 .row {
   display: flex;
   width: 100%;
-  border-bottom: 2px solid rgb(43, 40, 40);
+  border-bottom: 1px solid rgb(43, 40, 40);
 }
 
 .row:nth-child(2n) {
-  background-color: lightgray
+  background-color: rgb(243, 237, 237);
 }
 
 .row p {
@@ -217,4 +217,88 @@ h3 {
   font-size: 80%;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+/* ----- Transaction CSS ------ */
+
+.single-tx {
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  min-height: 150px;
+}
+
+.tx-hash{
+  display: flex;
+  width: 100%;
+  padding: .5%;
+  border-bottom: 1px solid rgb(43, 40, 40);
+  border-top: 1px solid rgb(43, 40, 40);
+  font-size: 75%;
+  background-color: rgb(243, 237, 237);
+}
+
+.tx-time {
+  margin-left: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.tx-info {
+  display: flex;
+  flex-direction: flex-start;
+  font-size: 90%;
+}
+
+.tx-arrow-green {
+  margin-top: auto; 
+  margin-bottom: auto;
+  font-size: 150%;
+  font-weight: bolder;
+  color: green;
+}
+
+.tx-arrow-red {
+  margin-top: auto; 
+  margin-bottom: auto;
+  font-size: 150%;
+  font-weight: bolder;
+  color: red;
+}
+
+.tx-value-green {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 1% 1%;
+  background-color: rgb(107, 180, 107);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.tx-value-red {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 1% 1%;
+  background-color: rgb(177, 51, 51);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.in-addr-col {
+  width: 40%;
+}
+
+.tx-arrow-green {
+  width: 10%;
+}
+
+.tx-arrow-red {
+  width: 10%;
+}
+
+.out-addr-col {
+  width: 37.5%
 }

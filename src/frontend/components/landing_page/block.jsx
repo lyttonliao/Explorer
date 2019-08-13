@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import TransactionList from '../transaction/transaction_list';
 
 
 class Block extends React.Component {
@@ -27,7 +28,7 @@ class Block extends React.Component {
         const { current_block } = this.props
         var time = this.convertToTime(current_block.time)
         if (Object.entries(current_block).length === 0) return null;
-        
+
         return (
             <div>
                 <div className="single-block">
@@ -89,6 +90,7 @@ class Block extends React.Component {
                             </div>
                         </div>
                     </div>
+                    <TransactionList txsArr={current_block.tx}/>
                 </div>
             </div>
         )

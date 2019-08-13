@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 import { fetchAddress } from '../../actions/address_actions'
 import Address from './address'
  
@@ -14,4 +15,4 @@ export const mdp = dispatch => {
     })
 }
 
-export default connect(msp, mdp)(Address)
+export default withRouter(connect(msp, mdp)(Address))
