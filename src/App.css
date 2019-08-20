@@ -84,7 +84,8 @@
   position: absolute;
   top: 15%;
   left: 30%;
-  width: 45%
+  width: 45%;
+  min-width: 600px;
 }
 
 .block-columns {
@@ -93,7 +94,7 @@
   -webkit-box-pack: center;
   align-items: flex-start;
   border-bottom: 1px solid rgb(240, 242, 247);
-  font-size: 1.75vh
+  font-size: 1.75vh;
 }
 
 .height {
@@ -392,4 +393,89 @@ ul {
 
 .tx-row.last {
   border-bottom: none;
+}
+
+
+/* ----- Address ----- */
+
+.single-address {
+  padding-top: 7%;
+  position: relative;
+}
+
+.address-info {
+  display: block;
+  position: relative;
+  justify-content: space-evenly;
+  width: 35%;
+  min-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.summary {
+  font-weight: bold;
+}
+
+.address-pg-height {
+  font-size: 200%;
+  margin-left: 7.75%;
+  display: flex;
+}
+
+.address-pg-height .address-pg-extra {
+  font-size: 75%;
+  color: grey;
+  margin: auto 0;
+}
+
+.address-summary-row p {
+  margin-left: 2%;
+}
+
+.address-row {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgb(43, 40, 40);
+}
+
+.address-row:nth-child(2n) {
+  background-color: rgb(243, 237, 237);
+}
+
+.address-row:first-of-type {
+  border-top: 1px solid rgb(43, 40, 40);
+}
+
+.address-row:last-of-type {
+  border-bottom: none;
+}
+
+.address-row p {
+  flex-direction: start;
+  align-items: flex-start;
+  width: 50%;
+  font-size: 90%;
+  margin-left: 2%;  
+}
+
+.address-row p:nth-child(2n) {
+  text-align: right;  
+  margin-right: 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.address-info-2 div .address-hash {
+  font-size: 80%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.balance.green {
+  color: green;
+}
+
+.balance.red {
+  color: red;
 }

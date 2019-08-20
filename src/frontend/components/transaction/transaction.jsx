@@ -8,7 +8,6 @@ class Transaction extends React.Component {
     }
 
     componentDidMount() {
-        debugger
         this.props.fetchTx(this.props.match.params.tx)
     }
 
@@ -69,7 +68,6 @@ class Transaction extends React.Component {
     }
 
     createTxItem () {
-        debugger
         const { tx } = this.props
         const hash = tx.hash
         const inputs = this.inputArr(tx.inputs)
@@ -89,7 +87,6 @@ class Transaction extends React.Component {
         const { tx } = this.props
         if (Object.values(tx).length === 0) return null;
 
-        debugger
 
         const txItem = this.createTxItem()
         const inputs = this.inputArr(tx.inputs)
