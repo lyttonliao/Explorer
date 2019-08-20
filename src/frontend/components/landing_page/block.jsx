@@ -32,7 +32,7 @@ class Block extends React.Component {
         return (
             <div>
                 <div className="single-block">
-                    <h3 >Block #{current_block.height}</h3>
+                    <h3 className="block-pg-height">Block #{current_block.height}</h3>
                     <div className="block-info">
                         <div className="block-info-1">
                             <div className="block-summary-row">

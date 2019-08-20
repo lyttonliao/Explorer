@@ -21,7 +21,7 @@ class TransactionItem extends React.Component {
             if (output.address) {
                 return <li key={i}><Link to={`/address/${output.address}`}>{output.address.slice(0, 30) + "..."}</Link></li>
             } else {
-                return <li key={i}>Unable to decode output address</li>
+                return <li key={i} className="error-output">Unable to decode output address</li>
             }
         })
 
@@ -36,11 +36,11 @@ class TransactionItem extends React.Component {
         )
 
         const valueColor = currVal > 0 ? (
-            <div className="tx-value-green">
+            <div className="tx-value green">
                 {currVal.toString().slice(0, 12) + " BTC"}
             </div>
         ) : (
-                <div className="tx-value-red">
+                <div className="tx-value red">
                     {currVal.toString().slice(0, 12) + " BTC"}
                 </div>
         )

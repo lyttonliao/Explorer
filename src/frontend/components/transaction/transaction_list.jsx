@@ -4,6 +4,12 @@ import TransactionItem from './transaction_item';
 class TransactionList extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            loading: true,
+            page: 0,
+            showAmount: '100',
+            dropdown: false
+        }
     }
 
     convertToTime(unix) {
@@ -18,9 +24,7 @@ class TransactionList extends React.Component {
     inputArr(inputs) {
         let modifiedInputs = []
         inputs.forEach(input => {
-            // debugger
             if (input.prev_out !== undefined) {
-                // debugger
                 const prev = input.prev_out
                 const address = prev.addr
                 const value = this.convertToBTC(prev.value)
@@ -37,7 +41,6 @@ class TransactionList extends React.Component {
     outputArr(outputs) {
         let modifiedOutputs = []
         outputs.forEach(out => {
-            // debugger
             const address = out.addr
             const value = this.convertToBTC(out.value)
             const newOutput = {
@@ -49,9 +52,9 @@ class TransactionList extends React.Component {
         return modifiedOutputs
     }
 
-    diffPerTx(output) {
+    diffPerTx(outputs) {
         let currVal = 0
-        output.forEach(output => {
+        outputs.forEach(output => {
             currVal += parseFloat(output.value)
         })
         return currVal
