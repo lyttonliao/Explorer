@@ -33,9 +33,14 @@
   }
 }
 
+a:link, a:hover {
+  color: rgb(36, 82, 168);
+  text-decoration: none;
+}
+
 /* ------- HEADER ------- */
 
-.header {
+/* .header {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -67,12 +72,12 @@
 .home-button a:link {
   text-decoration: none;
   cursor: pointer;
-}
+} */
 
 
 /* ------- LANDING PAGE ------- */
 
-.landing-page {
+/* .landing-page {
   display: flex;
 }
 
@@ -151,11 +156,11 @@
   flex-direction: column;
   align-items: flex-start;
   width: 35%;
-}
+} */
 
 /* ------ Block Page ----- */
 
-.single-block {
+/* .single-block {
   padding-top: 7%;
 }
 
@@ -221,19 +226,19 @@
   font-size: 80%;
   margin-top: auto;
   margin-bottom: auto;
-}
+} */
 
 /* ----- Transaction List CSS ----- */
 
-.tx-title {
+/* .tx-title {
   font-size: 150%;
   margin-left: 7.5%;
-}
+} */
 
 
 /* ----- Transaction CSS ------ */
 
-.single-tx {
+/* .single-tx {
   margin-left: 7.5%;
   margin-right: 7.5%;
   min-height: 150px;
@@ -332,21 +337,18 @@ ul {
 .out-addr-col a:link, .out-addr-col a:visited {
   text-decoration: none;
   color: rgb(36, 82, 168);
-}
+} */
 
 
 /* ------- tx-page ------- */
 
 
-.tx-page {
+/* .tx-page {
   position: relative;
   top: 150px;
 }
 
 .tx-desc {
-  /* border: 3px solid black;
-  border-radius: 20px;
-  box-sizing: border-box; */
   width: 90%;
   margin: auto;
   display: flex;
@@ -393,12 +395,12 @@ ul {
 
 .tx-row.last {
   border-bottom: none;
-}
+} */
 
 
 /* ----- Address ----- */
 
-.single-address {
+/* .single-address {
   padding-top: 7%;
   position: relative;
 }
@@ -478,4 +480,4 @@ ul {
 
 .balance.red {
   color: red;
-}
+} */

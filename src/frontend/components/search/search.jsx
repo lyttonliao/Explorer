@@ -1,4 +1,6 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
+import '../../../css/search.css'
 
 class Search extends React.Component {
     constructor(props) {
@@ -6,15 +8,43 @@ class Search extends React.Component {
         this.state = {
             text: "",
         }
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
-    
+    handleChange(e) {
+        this.setState({
+            text: e.target.value,
+        })
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        const address = this.state.text;
+        if (address.length > 0) {
+            debugger
+            this.props.history.push(`/address/${address}`)
+        }
+        this.setState({
+            text: ""
+        })
+    }
 
     render() {
         return (
-            <input type="text" onChange={this.handleChange} value={this.state.text}></input>
+            <div>
+                <form onSubmit={this.handleSubmit} className = "search-bar">
+                    <i className="fas fa-search search-icon"></i>
+                    <input 
+                        type="text" 
+                        onChange={this.handleChange} 
+                        value={this.state.text} 
+                        placeholder="Lookup addresses..">
+                    </input>
+                </form>
+            </div>
         )
     }
 }
 
-export default Search
+export default withRouter(Search)

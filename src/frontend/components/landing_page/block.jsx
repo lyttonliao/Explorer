@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import TransactionList from '../transaction/transaction_list';
+import './../../../css/block.css'
 
 
 class Block extends React.Component {

@@ -1,11 +1,11 @@
 import React from 'react';
 import TransactionItem from './transaction_item';
+import '../../../css/transaction_list.css';
 
 class TransactionList extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            loading: true,
             page: 0,
             showAmount: '100',
             dropdown: false
@@ -80,6 +80,8 @@ class TransactionList extends React.Component {
         })
         return allTx.slice(0,200)
     }
+
+    
 
     render() {
         if (this.props.txsArr.length === undefined) return null;

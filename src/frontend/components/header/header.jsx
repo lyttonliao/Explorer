@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import logo from '../../../images/explorer_icon.png'
-// import SearchContainer from '../search/search_container';
+import Search from '../search/search';
+import './../../../css/header.css'
 
 class Header extends React.Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class Header extends React.Component {
                     <Link to='/explorer'><img className="App-logo" src={logo} alt="Logo" /></Link>
                     <Link to='/explorer'><h1 className="home-button">Explorer</h1></Link>
                     <ul className="primary-nav">
-                        {/* <SearchContainer /> */}
+                        <Search />
                     </ul>
                 </div>
             </nav>

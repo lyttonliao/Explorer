@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import TransactionList from '../transaction/transaction_list'
+import './../../../css/address.css'
 
 class Address extends React.Component {
     constructor(props) {
@@ -39,7 +40,7 @@ class Address extends React.Component {
                         </div>
                         <div className="address-row">
                             <p>Address</p>
-                            <p className="address-hash">{address.n_tx}</p>
+                            <p className="address-hash"><Link to={`/address/${address.address}`}>{address.address}</Link></p>
                         </div>
                         <div className="address-row">
                             <p>Hash 160</p>

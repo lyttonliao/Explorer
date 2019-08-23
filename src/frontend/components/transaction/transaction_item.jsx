@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../../../css/transaction.css'
 
 class TransactionItem extends React.Component {
     constructor(props) {
@@ -14,12 +15,12 @@ class TransactionItem extends React.Component {
             inputAddr = <li>No Inputs (Newly Generated Coin)</li>
         } else {
             inputAddr = inputs.map((input, i) => {
-                return <li key={i}><Link to={`/address/${input.address}`}>{input.address.slice(0,30) + "..."}</Link></li>
+                return <li key={i}><Link to={`/address/${input.address}`}>{input.address}</Link></li>
             }) 
         }
         const outputAddr = outputs.map((output, i) => {
             if (output.address) {
-                return <li key={i}><Link to={`/address/${output.address}`}>{output.address.slice(0, 30) + "..."}</Link></li>
+                return <li key={i}><Link to={`/address/${output.address}`}>{output.address}</Link></li>
             } else {
                 return <li key={i} className="error-output">Unable to decode output address</li>
             }

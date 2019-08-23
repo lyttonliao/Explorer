@@ -1,5 +1,6 @@
 import React from 'react';
 import TransactionItem from './transaction_item';
+import '../../../css/transaction_page.css'
 // import { Link } from 'react-router-dom';
 
 class Transaction extends React.Component {

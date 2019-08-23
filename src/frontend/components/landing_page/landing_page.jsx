@@ -1,6 +1,7 @@
 import React from 'react'
 import { withRouter, Link } from 'react-router-dom';
 import { timeout } from 'q';
+import '../../../css/landing_page.css'
 
 class LandingPage extends React.Component {
     constructor(props) {
@@ -19,12 +20,12 @@ class LandingPage extends React.Component {
 
     blockTolist() {
         return Object.values(this.props.blocks).map((block, i) => {
-            const short_block_hash = block.hash.substring(0,23) + "..."
+            // const short_block_hash = block.hash.substring(0,23) + "..."
             const time = this.convertToTime(block.time)
             return (
                 <div key={i} className="block">
                     <div className="block-height"><Link to={`/block/${block.hash}`}>{block.height}</Link></div>
-                    <div className="block-hash"><Link to={`/block/${block.hash}`}>{short_block_hash}</Link></div>
+                    <div className="block-hash"><Link to={`/block/${block.hash}`}>{block.hash}</Link></div>
                     <div className="block-date">{time}</div>
                 </div>
             )

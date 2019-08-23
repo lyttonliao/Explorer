@@ -1,0 +1,19 @@
+form {
+    /* display: flex;
+    justify-content: flex-start; */
+    position: relative;
+    /* color: transparent */
+}
+
+form i {
+    position: absolute;
+    top: 25%;
+    left: 1%
+}
+            
+input {
+    min-width: 450px; 
+    padding: 5px 25px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
