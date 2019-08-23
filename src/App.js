@@ -6,11 +6,7 @@ import BlockContainer from './frontend/components/landing_page/block_container'
 import AddressContainer from './frontend/components/address/address_container';
 import Header from './frontend/components/header/header'
 import TransactionContainer from './frontend/components/transaction/transaction_container'
-<<<<<<< HEAD
 import SearchError from './frontend/components/search/search_error'
-=======
-
->>>>>>> parent of 57ca5783... Updates
 
 const App = () => (
   <div>
@@ -21,10 +17,7 @@ const App = () => (
           <Redirect to="/explorer" />
         )} />
         <Route path="/explorer" component={LandingPageContainer} />
-<<<<<<< HEAD
         <Route exact path="/search/:address" component={SearchError} />
-=======
->>>>>>> parent of 57ca5783... Updates
         <Route exact path="/block/:block_hash" component={BlockContainer} />
         <Route exact path="/address/:address" component={AddressContainer} />
         <Route exact path="/transaction/:tx" component={TransactionContainer} />

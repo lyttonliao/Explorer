@@ -8,6 +8,10 @@
   /* min-width: 768px; */
 }
 
+.block-pg-height {
+  text-align: left;
+}
+
 .block-info-1 {
   width: 35%;
   min-width: 500px;

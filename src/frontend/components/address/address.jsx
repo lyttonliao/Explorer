@@ -12,6 +12,7 @@ class Address extends React.Component {
         this.props.fetchAddress(this.props.match.params.address).catch(() => {
             this.props.history.push(`/search/${this.props.match.params.address}`)
         })
+        window.scrollTo(0,0)
     }
 
     componentWillReceiveProps(nextProps) {
@@ -20,6 +21,7 @@ class Address extends React.Component {
                 this.props.history.push(`/search/${this.props.match.params.address}`);
             })
         }
+        window.scrollTo(0, 0)
     }
 
     convertToBTC(value) {

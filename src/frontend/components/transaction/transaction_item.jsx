@@ -12,11 +12,7 @@ class TransactionItem extends React.Component {
         let inputAddr;
         
         if (inputs.length === 0) {
-<<<<<<< HEAD
             inputAddr = <li><strong>No Inputs (Newly Generated Coin)</strong></li>
-=======
-            inputAddr = <li>No Inputs (Newly Generated Coin)</li>
->>>>>>> parent of 57ca5783... Updates
         } else {
             inputAddr = inputs.map((input, i) => {
                 return <li key={i}><Link to={`/address/${input.address}`}>{input.address}</Link></li>
@@ -26,11 +22,7 @@ class TransactionItem extends React.Component {
             if (output.address) {
                 return <li key={i}><Link to={`/address/${output.address}`}>{output.address}</Link></li>
             } else {
-<<<<<<< HEAD
                 return <li key={i} className="error-output"><strong>Unable to decode output address</strong></li>
-=======
-                return <li key={i} className="error-output">Unable to decode output address</li>
->>>>>>> parent of 57ca5783... Updates
             }
         })
 
