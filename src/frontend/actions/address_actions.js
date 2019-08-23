@@ -4,7 +4,6 @@ export const RECEIVE_ADDRESS = "RECEIVE_ADDRESS";
 export const RECEIVE_BLOCKCOUNT = "RECEIVE_BLOCKCOUNT";
 
 export const receiveAddress = data => {
-    debugger
     return {
         type: RECEIVE_ADDRESS,
         data
@@ -12,6 +11,5 @@ export const receiveAddress = data => {
 }
 
 export const fetchAddress = address => dispatch => {
-    debugger
     return AddressApiUtil.fetchBCAddressDetail(address).then(data => dispatch(receiveAddress(data)))
 }

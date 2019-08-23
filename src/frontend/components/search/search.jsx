@@ -22,7 +22,6 @@ class Search extends React.Component {
         e.preventDefault();
         const address = this.state.text;
         if (address.length > 0) {
-            debugger
             this.props.history.push(`/address/${address}`)
         }
         this.setState({
@@ -41,6 +40,10 @@ class Search extends React.Component {
                         value={this.state.text} 
                         placeholder="Lookup addresses..">
                     </input>
+                    <button 
+                        className={this.state.text.length > 0 ? "search-enter-true" : "search-enter-false"}>
+                        Search
+                    </button>
                 </form>
             </div>
         )
