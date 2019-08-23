@@ -104,7 +104,11 @@ class Transaction extends React.Component {
                 <div className="tx-desc">
                     <div className="tx-desc-1">
                         <div className="tx-summary-row">
+<<<<<<< HEAD
                             <p className="tx-summary">Summary</p>
+=======
+                            <h3 className="tx-summary">Summary</h3>
+>>>>>>> parent of 57ca5783... Updates
                         </div>
                         <div className="tx-row">
                             <p>Weight</p>
@@ -125,6 +129,7 @@ class Transaction extends React.Component {
                     </div>
                     <div className="tx-desc-2">
                         <div className="tx-summary-row">
+<<<<<<< HEAD
                             <p className="tx-summary">Inputs and Outputs</p>
                         </div>
                         <div className="tx-row">
@@ -134,6 +139,17 @@ class Transaction extends React.Component {
                         <div className="tx-row last">
                             <p>Total Output</p>
                             <p>{currVal} BTC</p>
+=======
+                            <h3 className="tx-summary">Inputs and Outputs</h3>
+                        </div>
+                        <div className="tx-row">
+                            <p>Total Input</p>
+                            <p>{prevVal}</p>
+                        </div>
+                        <div className="tx-row last">
+                            <p>Total Output</p>
+                            <p>{currVal}</p>
+>>>>>>> parent of 57ca5783... Updates
                         </div>
                     </div>
                 </div>

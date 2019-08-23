@@ -9,13 +9,21 @@ class Address extends React.Component {
     }
 
     componentDidMount() {
+<<<<<<< HEAD
         this.props.fetchAddress(this.props.match.params.address).catch(() => {
             this.props.history.push(`/search/${this.props.match.params.address}`)
         })
+=======
+        this.props.fetchAddress(this.props.match.params.address)
+>>>>>>> parent of 57ca5783... Updates
     }
 
     componentWillReceiveProps(nextProps) {
         if (this.props.match.params.address !== nextProps.match.params.address) {
+<<<<<<< HEAD
+=======
+            debugger
+>>>>>>> parent of 57ca5783... Updates
             this.props.fetchAddress(nextProps.match.params.address);
         }
     }

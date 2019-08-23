@@ -18,6 +18,7 @@
   color: rgb(36, 82, 168);
 }
 
+<<<<<<< HEAD
 .tx-summary-row {
   /* margin-left: 2%; */
   font-size: 90%;
@@ -28,6 +29,9 @@
 .tx-summary-row p {
   margin-left: 2%;
 }
+=======
+
+>>>>>>> parent of 57ca5783... Updates
 
 .tx-time {
   margin-left: auto;

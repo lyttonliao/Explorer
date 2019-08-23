@@ -17,6 +17,7 @@ input {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
+<<<<<<< HEAD
 
 button {
     margin-left: 30px;
@@ -48,3 +49,5 @@ button {
 
 
 button:focus {outline-color: none}
+=======
+>>>>>>> parent of 57ca5783... Updates

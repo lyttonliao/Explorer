@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: rgb(13, 13, 70);
+  height: 10vh;
+  z-index: 5;
+}
+
+.prim-nav-logo {
+  display: flex;
+  margin-left: 10%;
+  text-decoration: none;
+}
+
+.prim-nav-logo a:link {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-decoration: none;
+}
+
+.home-button {
+  font-size: 4vh;
+  padding-left: 15%;
+  color: white;
+}
+
+.home-button a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primary-nav {
+  margin: auto;
+}
