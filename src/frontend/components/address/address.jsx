@@ -16,7 +16,9 @@ class Address extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         if (this.props.match.params.address !== nextProps.match.params.address) {
-            this.props.fetchAddress(nextProps.match.params.address);
+            this.props.fetchAddress(nextProps.match.params.address).catch(() => {
+                this.props.history.push(`/search/${this.props.match.params.address}`)
+            });
         }
     }
 

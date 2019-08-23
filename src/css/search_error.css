@@ -1,13 +1,12 @@
 .error-message {
     position: absolute;
-    /* text-align: center; */
     left: 50%;
     top: 30%;
     transform: translate(-50%, -50%);
     align-items: center;
 }
 
-h3 {
+.error-message h2, .error-message h3 {
     text-align: center;
 }
 

@@ -1,8 +1,5 @@
 form {
-    /* display: flex;
-    justify-content: flex-start; */
     position: relative;
-    /* color: transparent */
 }
 
 form i {
@@ -45,6 +42,3 @@ button {
 .search-enter-false:hover {
     cursor: not-allowed;
 }
-
-
-button:focus {outline-color: none}
