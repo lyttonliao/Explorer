@@ -6,19 +6,10 @@
 
 ### Blocks, Addresses, Transactions
 
-The Explorer application allows you to transition seamlessly from
+The Explorer application allows you to transition seamlessly between blocks, addresses, and transactions. Blocks act as record book for transactions. You can also access the addresses, which is a unique identifier where cryptocurrency can be sent. Or you may view the transactions themselves. Below are videos that demonstrate basic navigation of the application.
 
-![alt text](https://github.com/lyttonliao/NetflixClone/blob/master/app/assets/images/Auth.png)
-
-
-![alt text](https://github.com/lyttonliao/NetflixClone/blob/master/app/assets/images/Show.png)
-
-
-![alt text](https://github.com/lyttonliao/NetflixClone/blob/master/app/assets/images/movieindexitem.png) -->
-
-![alt text](https://github.com/lyttonliao/NetflixClone/blob/master/app/assets/images/Dropdown.png)
-
-![alt text](https://github.com/lyttonliao/NetflixClone/blob/master/app/assets/images/ddinfo.png)
+![alt text](https://giphy.com/gifs/KEBhX2W4OmXcLcK5Fs/html5)
+![alt text](https://giphy.com/gifs/QvSuwcThi0UzDzWtn5/html5)
 
 ## Technology
 
