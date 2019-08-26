@@ -9,14 +9,14 @@ import TransactionContainer from './frontend/components/transaction/transaction_
 import SearchError from './frontend/components/search/search_error'
 
 const App = () => (
-  <div>
+  <div className="full-app">
     <Header />
     <div className="main-content">
       <Switch>
-        <Route exact path="/" render={() => (
+        {/* <Route exact path="/" render={() => (
           <Redirect to="/explorer" />
-        )} />
-        <Route path="/explorer" component={LandingPageContainer} />
+        )} /> */}
+        <Route exact path="/" component={LandingPageContainer} />
         <Route exact path="/search/:address" component={SearchError} />
         <Route exact path="/block/:block_hash" component={BlockContainer} />
         <Route exact path="/address/:address" component={AddressContainer} />

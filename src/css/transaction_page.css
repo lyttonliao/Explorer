@@ -1,9 +1,10 @@
 .tx-page {
-  position: relative;
+  position: absolute;
+  width: 100%;
   top: 150px;
 }
 
-.tx-title {
+.tx-title-header {
   text-align: left;
 }
 

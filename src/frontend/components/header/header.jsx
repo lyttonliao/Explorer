@@ -13,8 +13,8 @@ class Header extends React.Component {
         return(
             <nav className="header">
                 <div className="prim-nav-logo">
-                    <Link to='/explorer'><img className="App-logo" src={logo} alt="Logo" /></Link>
-                    <Link to='/explorer'><h1 className="home-button">Explorer</h1></Link>
+                    <Link to='/'><img className="App-logo" src={logo} alt="Logo" /></Link>
+                    <Link to='/'><h1 className="home-button">Explorer</h1></Link>
                     <ul className="primary-nav">
                         <Search />
                     </ul>

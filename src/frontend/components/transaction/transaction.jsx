@@ -95,6 +95,9 @@ class Transaction extends React.Component {
         const prevVal = this.totalInput(inputs)
         const time = this.convertToTime(tx.time)
 
+        // return (
+        //     <div></div>
+        
         return (
             <div className="tx-page">
                 <h3 className="tx-title">Transactions</h3>
