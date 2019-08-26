@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import LandingPageContainer from './frontend/components/landing_page/landing_page_container'
 import BlockContainer from './frontend/components/landing_page/block_container'
 import AddressContainer from './frontend/components/address/address_container';

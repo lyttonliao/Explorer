@@ -41,7 +41,7 @@ class Search extends React.Component {
                         placeholder="Lookup addresses..">
                     </input>
                     <button 
-                        className={this.state.text.length > 0 ? "search-enter-true" : "search-enter-false"}>
+                        className={this.state.text.length > 0 ? "search-button search-enter-true" : "search-button search-enter-false"}>
                         Search
                     </button>
                 </form>
