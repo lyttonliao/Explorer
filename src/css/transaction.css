@@ -15,7 +15,7 @@
 
 .tx-hash a:link, .tx-hash a:visited {
   text-decoration: none;
-  color: rgb(36, 82, 168);
+  color: #10ADE4;
 }
 
 .tx-summary-row {
@@ -89,7 +89,7 @@ ul {
 
 .in-addr-col a:link, .in-addr-col a:visited {
   text-decoration: none;
-  color: rgb(36, 82, 168);
+  color: #10ADE4;
 }
 
 .out-addr-col {
@@ -98,11 +98,11 @@ ul {
 
 .out-addr-col a:link, .out-addr-col a:visited {
   text-decoration: none;
-  color: rgb(36, 82, 168);
+  color: #10ADE4;
 }
 
 a:link, a:hover, a:visited {
-  color: rgb(36, 82, 168);
+  color: #10ADE4;
   text-decoration: none;
 }
 
