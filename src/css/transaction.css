@@ -67,7 +67,7 @@ ul {
 .tx-value {
   min-width: 110px;
   margin: auto;
-  padding: 1% 1%;
+  padding: 10px;
   background-color: rgb(107, 180, 107);
   color: white;
   font-weight: bold;
